@@ -3,25 +3,26 @@
 
 int main() 
 {
-  int integerA;
-  float  floatA;
-  char  letterA;
+  int integerX;
+  int integerY;
 
-  printf("Ingresa el valor del entero A: ");
+  printf("Ingresa el valor X: ");
 
-  scanf("%i", &integerA);
+  scanf("%i", &integerX);
 
-  printf("Ingresa el valor del float A: ");
+  printf("Ingresa el valor Y: ");
 
-  scanf("%f", &floatA);
+  scanf("%i", &integerY);
 
-  printf("Ingresa el valor del caracter A: ");
+  printf("El valor de X es: %i", integerX);
+  printf("El valor de Y es: %i", integerY);
+  
+  int integerAUX  =  integerX;
+  int integernewX = integerY;
+  int integernewY = integerAUX;
 
-  scanf(" %c", &letterA);
-
-  printf("El entero a es: %i", integerA);
-  printf("El entero a es: %f", floatA);
-  printf("El entero a es: %c", letterA);
+  printf("EL valor intercambiado del entero X es: %i", integernewX);
+  printf("EL valor intercambiado del entero Y es: %i", integernewY);
 
   return 0;
 }
