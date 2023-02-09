@@ -3,19 +3,25 @@
 
 int main() 
 {
-  int integerA = 1;
-  float  floatA  =  1.1;
-  double  doubleA  =  1.2;
-  char  letterA  =  'A';
+  int integerA;
+  float  floatA;
+  char  letterA;
 
-  //En la siguiente linea estamos imprimiendo mi variable integerA
-  printf("El valor de nuestro entera A es: %i \n", integerA);
+  printf("Ingresa el valor del entero A: ");
 
-  printf("El valor de mi flotante A es: %f \n", floatA);
+  scanf("%i", &integerA);
 
-  printf("El valor de mi double A es: %f \n", doubleA);
+  printf("Ingresa el valor del float A: ");
 
-  printf("El valor de mi caracter A es: %c \n", letterA);
-  
+  scanf("%f", &floatA);
+
+  printf("Ingresa el valor del caracter A: ");
+
+  scanf(" %c", &letterA);
+
+  printf("El entero a es: %i", integerA);
+  printf("El entero a es: %f", floatA);
+  printf("El entero a es: %c", letterA);
+
   return 0;
 }
